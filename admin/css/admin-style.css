@@ -1,0 +1,209 @@
+/**
+ * Стили административной панели MultiGEO & Satellite Engine
+ * Нативная светлая тема WordPress Admin Core UI
+ */
+
+.multigeo-wrap {
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.multigeo-header {
+  margin-bottom: 20px;
+}
+
+.multigeo-header h1 {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  font-size: 23px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.multigeo-badge {
+  display: inline-block;
+  vertical-align: middle;
+  background: #f0f0f1;
+  color: #50575e;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.multigeo-header .description {
+  margin: 6px 0 0;
+  color: #646970;
+  font-size: 13px;
+}
+
+/* Карточки KPI */
+.multigeo-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.multigeo-kpi-card {
+  background: #ffffff;
+  border: 1px solid #c3c4c7;
+  border-top: 3px solid #2271b1;
+  border-radius: 4px;
+  padding: 14px 18px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.multigeo-kpi-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #646970;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.multigeo-kpi-val {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1d2327;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.multigeo-geo-tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.multigeo-status-active {
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.multigeo-status-inactive {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.multigeo-link-view {
+  font-size: 12px;
+  color: #2271b1;
+  text-decoration: none;
+}
+
+.multigeo-link-view:hover {
+  text-decoration: underline;
+}
+
+/* Двухколоночный макет */
+.multigeo-columns {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 24px;
+}
+
+.multigeo-card {
+  background: #ffffff;
+  border: 1px solid #c3c4c7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+}
+
+.multigeo-card .postbox-header {
+  border-bottom: 1px solid #c3c4c7;
+  padding: 12px 18px;
+}
+
+.multigeo-card .postbox-header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.multigeo-card .inside {
+  padding: 18px;
+}
+
+.multigeo-form-group {
+  margin-bottom: 18px;
+}
+
+.multigeo-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d2327;
+  margin-bottom: 6px;
+}
+
+.multigeo-form-group label .required {
+  color: #d63638;
+}
+
+.multigeo-form-group input[type="text"] {
+  width: 100%;
+}
+
+.multigeo-form-group .description {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #646970;
+}
+
+.multigeo-actions-bar {
+  margin-top: 20px;
+}
+
+/* Блок API ключа и примеров */
+.multigeo-api-key-block {
+  background: #f6f7f7;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  padding: 14px;
+  margin: 16px 0;
+}
+
+.multigeo-api-endpoints {
+  margin-top: 18px;
+}
+
+.multigeo-api-endpoints code {
+  display: block;
+  background: #f0f0f1;
+  color: #1d2327;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.multigeo-curl-example {
+  background: #1d2327;
+  color: #f0f0f1;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.multigeo-curl-example code {
+  background: transparent;
+  color: #f0f0f1;
+  padding: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .multigeo-columns {
+    grid-template-columns: 1fr;
+  }
+}
